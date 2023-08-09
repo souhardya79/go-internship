@@ -44,7 +44,7 @@ func Decodejson() { //decoding json function
 	}
 	`)
 	var lcocourse course
-	checkValid := json.Valid(jsondata)//checks validity of json
+	checkValid := json.Valid(jsondata) //checks validity of json
 
 	if checkValid {
 		fmt.Println("JSON was valid")
