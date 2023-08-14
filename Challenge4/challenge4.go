@@ -25,6 +25,15 @@ func slices(slice1 []string, slice2 []string) ([]string, []string, []string) {
 			onlyinslice2 = append(onlyinslice2, str)
 		}
 	}
+	for str, existsinslice1 := range unique {
+		{
+			if existsinslice1 {
+				onlyinslice1 = append(onlyinslice1, str)
+			} else {
+				onlyinslice2 = append(onlyinslice2, str)
+			}
+		}
+	}
 
 	return onlyinslice1, bothslice, onlyinslice2
 }
