@@ -14,7 +14,7 @@ func FilterUnique(developers []Developer) []string {
 
 	for _, dev := range developers {
 		if _, exists := unimap[dev.Name]; !exists {
-			//unimap[dev.Name] = true
+			unimap[dev.Name] = true
 			uniname = append(uniname, dev.Name)
 		}
 	}
